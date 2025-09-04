@@ -1,12 +1,12 @@
 //Bluetooth speaker 
 $fn = 64;
  
-//walls(); 
+walls(thickness=35); 
 
-module walls() {   
+module walls(thickness) {   
     difference() { 
         cylinder(d = 80, h = 150, center=true);
         color("red")
-        cylinder(d = 80-5, h = 160, center=true);
+        cylinder(d = 80-thickness, h = 160, center=true);
  }
 }
