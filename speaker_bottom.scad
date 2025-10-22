@@ -1,6 +1,7 @@
 include <speaker_walls.scad>;
 
- bottom_kit();
+bottom_kit();
+
 
 module bottom_kit() {
 difference() {
@@ -11,8 +12,13 @@ difference() {
 module holes() {
     translate([90/2, 0, 25/2-1.5])
     cube([20, 40, 25], center=true);
+    
     translate([90/2-20/2, 0, 0])
     cylinder(d=5, h=30, center=true); 
+    
+    translate([90/2-20/2+8, 0, -5/2])
+    rotate([0, 90, 0])
+    cylinder(d=5, h=15, center=true);
 }
 
 module bottom() {
