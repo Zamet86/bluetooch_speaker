@@ -1,12 +1,11 @@
 include <speaker_walls.scad>
 include <speaker_bottom.scad>
-use <banana.scad>
-$fn = 64;
+use <banan.scad>
 
 bottom_kit();
 
 translate([90/2 + 20/2-8, 0, 25/2-5])
-banana();
+banan();
 //translate([0, 0, 150/2+10/4-4])
 //walls(thickness = 5); 
 
