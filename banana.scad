@@ -14,7 +14,7 @@ mini_support_ring();
 
 module  mini_support_ring() {
     difference() {
-        translate([-90/2-3, 0, -11.3])
+        translate([-90/2-3, 0, -11.61])
         ring();
         translate([-90/2-10.1, 0, 0])
         cube([90, 90, 90], center = true);
@@ -26,15 +26,15 @@ module  mini_support_ring() {
         translate([-1, -20/2-20-0.5, -4])
         cube([20, 20, 20], center = true);
         
-        translate([-20/2-0.5, 0, -4])
-        cube([20, 40-6, 20], center = true);
+//        translate([-20/2-0.5, 0, -4])
+//        cube([20, 40-6, 20], center = true);
     }
 }
 
 
 module ring() {
     difference() {
-        cylinder(d=90, h=2.3, center = true);
+        cylinder(d=90, h=1.75, center = true);
         cylinder(d=90-5.5, h=5, center = true);
     } 
 }
